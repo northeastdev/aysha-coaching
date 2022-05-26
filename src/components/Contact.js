@@ -8,7 +8,7 @@ function Contact() {
   const [message, setMessage] = useState("");
 
   return (
-    <section>
+    <section id="contact">
       <Heading heading={"Contact Us"} />
       <Subheading subheading={"Have any doubts? Get in touch."} />
 
@@ -18,7 +18,9 @@ function Contact() {
             <i className=" text-3xl text-violet-600 mr-3 uil uil-phone contact__icon"></i>
             <div>
               <h3 className="text-lg font-medium">Call Me</h3>
-              <span className=" text-sm text-slate-400">999-777-666</span>
+              <span className=" text-sm text-slate-400">
+                +916009250851 | +918486779678
+              </span>
             </div>
           </div>
 
@@ -28,7 +30,7 @@ function Contact() {
             <div>
               <h3 className="text-lg font-medium">Email</h3>
               <span className=" text-sm text-slate-400">
-                ayshacoaching@email.com
+                scienceclass730@gmail.com
               </span>
             </div>
           </div>
@@ -39,7 +41,8 @@ function Contact() {
             <div>
               <h3 className="text-lg font-medium">Location</h3>
               <span className=" text-sm text-slate-400">
-                Hallidayganj - Singimari, 793003
+                Ground Floor, Near SBI ATM, <br /> Hallidayganj (Singimari){" "}
+                <br /> West Garo Hills, Meghalaya - 794104
               </span>
             </div>
           </div>
@@ -60,6 +63,7 @@ function Contact() {
                 className="w-full bg-violet-100 text-slate-600 outline-none text-sm border-none pt-1 pr-2 pb-2"
                 type="text"
                 value={name}
+                name="name"
                 required
               ></input>
             </div>
@@ -71,6 +75,7 @@ function Contact() {
                 onChange={(event) => setEmail(event.target.value)}
                 className="w-full bg-violet-100 text-slate-600 outline-none text-sm border-none pt-1 pr-2 pb-2"
                 value={email}
+                name="email"
                 type="email"
                 required
               ></input>
@@ -84,7 +89,7 @@ function Contact() {
               onChange={(event) => setMessage(event.target.value)}
               className="w-full bg-violet-100 text-slate-600 outline-none text-sm border-none pt-1 pr-2 pb-2"
               value={message}
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="7"

@@ -5,7 +5,7 @@ function ImageFrame({ students }) {
   return (
     <div className="flex flex-col items-center">
       <div
-        className=" w-[375px] h-[290px] rounded-sm bg-cover"
+        className=" w-[345px] h-[290px] rounded-sm bg-cover"
         style={{
           backgroundImage: `url(${students[0].avatar})`,
         }}
@@ -18,7 +18,7 @@ function ImageFrame({ students }) {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-1 w-[375px] mt-1">
+      <div className="grid grid-cols-2 gap-1 w-[345px] mt-1">
         <div
           className="bg-slate-300 h-36 rounded-sm bg-cover"
           style={{ backgroundImage: `url(${students[1].avatar})` }}

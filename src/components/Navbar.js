@@ -10,7 +10,7 @@ function Navbar() {
         <div className="container px-4 mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
           <div className="w-full relative flex justify-between items-center lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-slate-700"
+              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 uppercase text-slate-700"
               href="#pablo"
             >
               Aysha Tutorial Coaching Classes
@@ -61,7 +61,7 @@ function Navbar() {
                 </Link>
               </li>
               <button className=" w-24 mt-3 md:ml-5 md:mt-0 border text-sm rounded-full py-1 border-slate-900">
-                Contact
+                <a href="#contact">Contact</a>
               </button>
             </ul>
           </div>

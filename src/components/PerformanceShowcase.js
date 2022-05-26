@@ -45,12 +45,14 @@ function PerformanceShowcase() {
 
   useEffect(() => {
     getClassTenStudents().then((response) => setClassTenStudents(response));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     getClassElevenStudents().then((response) =>
       setClassElevenStudents(response)
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -9,6 +9,7 @@ function FreeTutorial() {
 
   useEffect(() => {
     getYoutubeLink().then((response) => setYoutubeLink(response));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const renderYoutubeVideos = () => {
@@ -16,7 +17,7 @@ function FreeTutorial() {
       return (
         <div className="mx-auto">
           <iframe
-            className="w-[375px] sm:w-[530px] md:w-[650px] h-96"
+            className="w-[340px] h-52 sm:w-[530px] sm:h-72 md:w-[650px] md:h-96"
             src={link.youtubeEmbedLink}
             title="YouTube video player"
             frameBorder="0"
