@@ -18,7 +18,7 @@ function Contact() {
             <i className=" text-3xl text-violet-600 mr-3 uil uil-phone contact__icon"></i>
             <div>
               <h3 className="text-lg font-medium">Call Me</h3>
-              <span className=" text-sm text-slate-400">
+              <span className=" text-sm text-slate-600">
                 +916009250851 | +918486779678
               </span>
             </div>
@@ -29,7 +29,7 @@ function Contact() {
 
             <div>
               <h3 className="text-lg font-medium">Email</h3>
-              <span className=" text-sm text-slate-400">
+              <span className=" text-sm text-slate-600">
                 scienceclass730@gmail.com
               </span>
             </div>
@@ -40,7 +40,7 @@ function Contact() {
 
             <div>
               <h3 className="text-lg font-medium">Location</h3>
-              <span className=" text-sm text-slate-400">
+              <span className=" text-sm text-slate-600">
                 Ground Floor, Near SBI ATM, <br /> Hallidayganj (Singimari){" "}
                 <br /> West Garo Hills, Meghalaya - 794104
               </span>
