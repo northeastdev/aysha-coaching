@@ -15,6 +15,7 @@ function Footer() {
               href="https://www.facebook.com/aysha.tutorial.1"
               target="_blank"
               rel="noreferrer"
+              aria-label="facebook page link"
             >
               <i className="uil uil-facebook text-3xl text-slate-800"></i>
             </a>

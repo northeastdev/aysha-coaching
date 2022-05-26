@@ -55,7 +55,7 @@ function Contact() {
         >
           <div className="grid lg:grid-cols-2 gap-6">
             <div className=" bg-violet-100 rounded-lg pt-3 pb-1 px-4">
-              <label className=" text-sm" for="">
+              <label className=" text-sm" for="name">
                 Name
               </label>
               <input
@@ -68,7 +68,7 @@ function Contact() {
               ></input>
             </div>
             <div className="bg-violet-100 rounded-lg pt-3 pb-1 px-4">
-              <label className="text-sm" for="">
+              <label className="text-sm" for="email">
                 Email
               </label>
               <input
@@ -82,7 +82,7 @@ function Contact() {
             </div>
           </div>
           <div className="bg-violet-100 rounded-lg pt-3 pb-1 px-4">
-            <label className="text-sm" for="">
+            <label className="text-sm" for="message">
               Message
             </label>
             <textarea

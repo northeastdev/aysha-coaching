@@ -16,6 +16,7 @@ function Navbar() {
               Aysha Tutorial Coaching Classes
             </a>
             <button
+              aria-label="menu button"
               className="text-slate-700 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
