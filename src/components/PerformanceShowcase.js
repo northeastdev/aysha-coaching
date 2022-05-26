@@ -64,6 +64,7 @@ function PerformanceShowcase() {
     getClassTwelveStudents().then((response) =>
       setClassTwelveStudents(response)
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
