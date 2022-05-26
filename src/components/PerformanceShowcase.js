@@ -5,7 +5,11 @@ import Subheading from "./Subheading";
 import useContenful from "./useContenful";
 
 function PerformanceShowcase() {
-  const { getClassTenStudents, getClassElevenStudents } = useContenful();
+  const {
+    getClassTenStudents,
+    getClassElevenStudents,
+    getClassTwelveStudents,
+  } = useContenful();
 
   const dummyStudents = [
     {
@@ -42,6 +46,7 @@ function PerformanceShowcase() {
 
   const [classTenStudents, setClassTenStudents] = useState(dummyStudents);
   const [classElevenStudents, setClassElevenStudents] = useState(dummyStudents);
+  const [classTwelveStudents, setClassTwelveStudents] = useState(dummyStudents);
 
   useEffect(() => {
     getClassTenStudents().then((response) => setClassTenStudents(response));
@@ -55,14 +60,20 @@ function PerformanceShowcase() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    getClassTwelveStudents().then((response) =>
+      setClassTwelveStudents(response)
+    );
+  });
+
   return (
     <div className=" mb-24 mx-auto">
       <Heading heading={"Wall of Pride"} />
       <Subheading subheading={"Latest Student Performances"} />
       <div className="mt-14 flex items-center md:justify-center lg:justify-center xl:justify-center gap-1 xl:gap-8 overflow-auto whitespace-nowrap">
-        <ImageFrame students={classTenStudents} />
+        <ImageFrame students={classTwelveStudents} />
         <ImageFrame students={classElevenStudents} />
-        {/* <ImageFrame student={classTwelveStudents} /> */}
+        <ImageFrame students={classTenStudents} />
       </div>
     </div>
   );

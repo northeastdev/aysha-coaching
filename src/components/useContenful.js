@@ -63,6 +63,25 @@ const useContenful = () => {
     }
   };
 
+  const getClassTwelveStudents = async () => {
+    try {
+      const entries = await client.getEntries({
+        content_type: "classTwelve",
+        select: "fields",
+      });
+      const classElevenStudents = entries.items.map((item) => {
+        const avatar = item.fields.avatar.fields.file.url;
+        return {
+          ...item.fields,
+          avatar,
+        };
+      });
+      return classElevenStudents;
+    } catch (error) {
+      console.log(`Error fetching students showcase: ${error}`);
+    }
+  };
+
   const getYoutubeLink = async () => {
     try {
       const entries = await client.getEntries({
@@ -82,6 +101,7 @@ const useContenful = () => {
     getAnnouncement,
     getClassTenStudents,
     getClassElevenStudents,
+    getClassTwelveStudents,
     getYoutubeLink,
   };
 };

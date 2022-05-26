@@ -24,7 +24,7 @@ function Hero() {
           </p>
 
           <button className="font-semibold rounded-full py-2 px-7 mt-4 text-xs lg:text-sm bg-yellow-200">
-            <a href="tel:+919365204521">Call Now</a>
+            <a href="tel:+916009250851">Call Now</a>
           </button>
           <ScrollSvg />
           <Wave />

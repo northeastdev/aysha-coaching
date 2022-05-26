@@ -49,7 +49,7 @@ function Contact() {
         </div>
 
         <form
-          action="https://formsubmit.co/da773154ba0c6db93ef7679a18b9dc77"
+          action="https://formsubmit.co/scienceclass730@gmail.com"
           method="POST"
           className="grid lg:w-[460px] gap-6"
         >
