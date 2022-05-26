@@ -64,7 +64,7 @@ function PerformanceShowcase() {
     getClassTwelveStudents().then((response) =>
       setClassTwelveStudents(response)
     );
-  });
+  }, []);
 
   return (
     <div className=" mb-24 mx-auto">

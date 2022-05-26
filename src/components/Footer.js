@@ -24,10 +24,10 @@ function Footer() {
           <div className="flex flex-col text-center md:text-left gap-5">
             <Link to="/about">About Us</Link>
             <Link to="/fees">Fees</Link>
-            <a href="/">Faculties</a>
+            {/* <a href="/">Faculties</a>
             <a href="/">Career</a>
             <a href="/">Syllabus</a>
-            <a href="/">Photo Gallery</a>
+            <a href="/">Photo Gallery</a> */}
           </div>
           <div className="mx-auto">
             <iframe

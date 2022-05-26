@@ -33,6 +33,7 @@ function Curriculum() {
             className="rounded-md max-w-md"
             src="https://media.istockphoto.com/photos/group-of-elementary-students-having-computer-class-with-their-teacher-picture-id1358014313?b=1&k=20&m=1358014313&s=170667a&w=0&h=t_bvZVk1eQhR1SiiuRphbJ3kljcJJ46QAsOQ8EnuLbA="
             alt="classroom"
+            loading="lazy"
           />
         </div>
       </div>
