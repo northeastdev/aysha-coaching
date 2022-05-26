@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import Announcement from "./Announcement";
 import Curriculum from "./Curriculum";
-// import PerformanceShowcase from "./PerformanceShowcase";
+import PerformanceShowcase from "./PerformanceShowcase";
 import FreeTutorial from "./FreeTutorial";
 import Contact from "./Contact";
 
@@ -11,8 +11,8 @@ function Home() {
       <Hero />
       <Announcement />
       <Curriculum />
-      {/* <PerformanceShowcase /> */}
-      <FreeTutorial />
+      <PerformanceShowcase />
+      {/* <FreeTutorial /> */}
       <Contact />
     </div>
   );
