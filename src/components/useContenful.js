@@ -1,14 +1,11 @@
 import { createClient } from "contentful";
 
 const useContenful = () => {
-  const client = createClient(
-    {
-      space: "f9caxm6dx0gw",
-      accessToken: "4K1PWpFlnq8ZiJbQohYG_uY10ZeWd8XuflrWusqH2Uk",
-      host: "preview.contentful.com",
-    },
-    []
-  );
+  const client = createClient({
+    space: "f9caxm6dx0gw",
+    accessToken: "4K1PWpFlnq8ZiJbQohYG_uY10ZeWd8XuflrWusqH2Uk",
+    host: "preview.contentful.com",
+  });
 
   const getAnnouncement = async () => {
     try {
